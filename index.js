@@ -14,7 +14,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/scrape', (req, res) => {
-  // axios.get('https://www.theguardian.com/environment/climate-crisis').then((response) => {
   axios.get('https://www.coingecko.com/en/').then((response) => {
     console.log(response.data)
     const html = response.data;
