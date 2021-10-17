@@ -6,7 +6,6 @@ const cheerio = require('cheerio');
 const app = express();
 
 const articles = [];
-const solana = [];
 const total = [];
 
 app.get('/', (req, res) => {
